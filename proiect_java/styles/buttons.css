@@ -1,0 +1,15 @@
+.home-button:hover{
+  cursor: pointer;
+}
+.home-button:active{
+  background-color: rgb(237, 237, 237);
+}
+.button-header-1{
+  padding-top: 22.5;
+  padding-bottom: 22.5;
+}
+
+.button-header-1:hover{
+  background-color: rgb(237, 237, 237);
+  cursor: pointer;
+}
