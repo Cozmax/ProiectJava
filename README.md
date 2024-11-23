@@ -1,0 +1,1 @@
+SALUUT oricine lucreaza la acest proiect. Va rog frumos sa faceti branch-uri cand lucrati la cod si eu voi fi persoana care se uita la merge-uri si conflicte daca sunteti ok cu asta, btw va rog sa adaugati mici descrieri despre ce modificari ati facut la cod 
