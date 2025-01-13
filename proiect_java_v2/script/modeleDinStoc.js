@@ -14,11 +14,12 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     /* Aici trebuie schimbat: Conexiune SQL -> Query pentru a prelua datele din tabelul MasiniDisponibile -> Feed into `masini` -> Let the magic happen */
+    const sqlCON = "";
+    
     const masini = [
-        { firma: 'Toyota', model: 'Corolla', pret: 20000, image: '../imagini/ford-explorer-electric.jpeg' },
-        { firma: 'Honda', model: 'Civic', pret: 22000, image: '../imagini/ford-explorer-electric.jpeg' },
         { firma: 'Ford', model: 'Focus', pret: 18000, image: '../imagini/ford-explorer-electric.jpeg' },
     ];
+
 
     masini.forEach(masina => {
         body.innerHTML += createCard(masina);
