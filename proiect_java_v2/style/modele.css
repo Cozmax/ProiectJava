@@ -1,0 +1,40 @@
+.main-body{
+    display: flex !important;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: flex-start;
+    padding: 16px;
+}
+
+.masina {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    width: 300px;
+    overflow: hidden;
+}
+
+.masina img {
+    width: 100% ;
+    height: 250px;
+    object-fit: cover;
+}
+
+.masina-info {
+    padding: 16px;
+}
+
+.masina-info h3 {
+    margin: 0 0 8px;
+    font-size: 1.5rem;
+}
+
+.masina-info p {
+    margin: 0;
+    color: #666;
+}
+
+.masina-info .pret {
+    margin-top: 12px;
+    font-weight: bold;
+    color: #333;
+}
