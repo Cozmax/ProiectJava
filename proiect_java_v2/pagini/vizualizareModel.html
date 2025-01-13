@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>EROARE</title>
+
+    <script>
+      fetch('header1.html')
+          .then(response => response.text())
+          .then(data => {
+              document.getElementById('header').innerHTML = data;
+          });
+    </script>
+  </head>
+
+  <body>
+    <!--Navbar General-->
+    <div id="header">
+    </div>
+
+    <!--Corpul -->
+    <div id="main-body" class="main-body">
+
+    </div>
+    <script src="../script/sidebar.js"></script>
+    <script src="../script/vizualizareModel.js"></script>
+  </body>
+</html>
