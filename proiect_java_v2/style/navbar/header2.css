@@ -1,0 +1,21 @@
+.header-2{
+  background-color: rgb(237, 237, 237);
+  margin-left: 25px;
+  margin-right: 25px;
+  box-shadow: 3px 3px 5px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 60px;;
+}
+.nav2ul{
+  width: 100%;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media(max-width:800px){
+  .header-2{
+    display: none;
+  }
+}
