@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     const body = document.getElementById('main-body');
 
-    const createCard = ({ firma, model, pret, image }) => {
+    const divMaker = ({ firma, model, pret, image }) => {
         return `
             <div class="masina">
                 <img src="${image}" alt="${model}">
@@ -13,8 +13,6 @@ document.addEventListener('DOMContentLoaded', () => {
         `;
     };
 
-    /* Aici trebuie schimbat: Conexiune SQL -> Query pentru a prelua datele din tabelul MasiniDisponibile -> Feed into `masini` -> Let the magic happen */
-    const sqlCON = "";
     
     const masini = [
         { firma: 'Ford', model: 'Focus', pret: 18000, image: '../imagini/ford-explorer-electric.jpeg' },
@@ -22,6 +20,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
     masini.forEach(masina => {
-        body.innerHTML += createCard(masina);
+        body.innerHTML += divMaker(masina);
     });
 });
