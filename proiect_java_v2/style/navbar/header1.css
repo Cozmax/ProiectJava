@@ -1,0 +1,40 @@
+nav{
+  background-color: white;
+  box-shadow: 3px 3px 5px rgba(0,0,0,0.1);
+  position: sticky;
+  top:0;
+}
+
+nav ul{
+  width: 100%;
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+nav li{
+  height: 60px;
+}
+
+nav a{
+  height: 100%;
+  padding: 0 30px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  color:  rgb(4, 29, 130);
+  font-weight: 600;
+}
+
+nav a:active{
+  color:  rgb(44, 79, 223);
+}
+
+.homme-button{
+  margin-right: auto;
+}
+
+.menuButton{
+  display: none;
+}
