@@ -3,17 +3,22 @@ const sql = require('mssql');
 const cors = require('cors');
 
 const app = express();
-const PORT = 3000;
+const port = 3000;
 
 app.use(cors());
 app.use(express.json());
 
 const sqlCONFIG = {
-    server: 'localhost',
-    database: 'DESKTOP-87H239E',
+    user: 'Test',
+    password: 'test',
+    server: 'DESKTOP-87H239E',
+    database: 'Proiect_Java',
     options: {
         trustedConnection: true,
         trustServerCertificate: true,
+    },
+    authentication: {
+        type: 'default',
     },
 };
 
@@ -26,7 +31,7 @@ sql.connect(sqlCONFIG)
         console.error('Database connection failed:', err.message);
     });
 
-app.get('/api/data', async (req, res) => {
+app.get('/modeleMasini', async (req, res) => {
     try {
         const pool = await sql.connect(sqlCONFIG);
         const result = await pool.request().query('SELECT * FROM MasiniDisponibile');
@@ -35,4 +40,8 @@ app.get('/api/data', async (req, res) => {
         console.error('Eroare query:', err);
         res.status(500).json({ error: 'Eroare' });
     }
+});
+
+app.listen(port, () => {
+    console.log(`Server is running on http://localhost:${port}`);
 });
