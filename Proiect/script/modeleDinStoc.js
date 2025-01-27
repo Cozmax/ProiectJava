@@ -44,7 +44,4 @@ document.addEventListener('DOMContentLoaded', () => {
     masini.forEach(masina => {
         body.innerHTML += divMaker(masina);
     });
-
-    const check = document.getElementById('check');
-    check.innerHTML = window.innerWidth + " " + window.innerHeight;
 });

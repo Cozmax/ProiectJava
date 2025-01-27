@@ -9,7 +9,7 @@
 .masina {
     background-color: #fff;
     border: 1px solid #ddd;
-    width: calc(90%/2);
+    width: calc(90%/3);
     overflow: hidden;
 }
 
@@ -36,4 +36,13 @@
     margin-top: 12px;
     font-weight: bold;
     color: #333;
+}
+
+@media(max-width: 1000px){
+    .masina {
+        background-color: #fff;
+        border: 1px solid #ddd;
+        width: calc(90%);
+        overflow: hidden;
+    }
 }

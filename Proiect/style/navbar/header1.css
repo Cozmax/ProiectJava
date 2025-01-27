@@ -38,3 +38,9 @@ nav a:active{
 .menuButton{
   display: none;
 }
+
+@media(max-width: 1000px){
+  nav{
+    
+  }
+}
