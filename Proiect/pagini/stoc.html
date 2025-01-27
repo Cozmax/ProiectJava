@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>STOC</title>
+    <script>
+      fetch('header1.html')
+          .then(response => response.text())
+          .then(data => {
+              document.getElementById('header').innerHTML = data;
+          });
+    </script>
+  </head>
+
+  <body>
+    <!--Navbar General-->
+    <div id="header">
+    </div>
+
+    <!--Corpul-->
+    <script src="../script/sidebar.js"></script>
+  </body>
+</html>

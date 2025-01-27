@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CAMPANI</title>
+
+    <script>
+      fetch('header1.html')
+          .then(response => response.text())
+          .then(data => {
+              document.getElementById('header').innerHTML = data;
+          });
+    </script>
+  </head>
+
+  <body>
+    <!--  Navbar General  -->
+    <div id="header">
+    </div>
+    <!--^ Navbar General ^-->
+
+    <!--  Corpul  -->
+    <script src="../script/sidebar.js"></script>
+    <!--^ Corpul ^-->
+  </body>
+</html>
