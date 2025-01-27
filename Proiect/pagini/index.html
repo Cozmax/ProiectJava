@@ -1,10 +1,15 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <title>Ford Proleasing Motors</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ford</title>
 
-    <link rel="stylesheet" href="../style/masini.css">
-
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="../style/style.css" />
+    <link rel="stylesheet" href="../style/slider.css" />
     <script>
       fetch('header1.html')
           .then(response => response.text())
@@ -13,32 +18,509 @@
           });
 
     </script>
+
   </head>
   <body>
-    <div id="header">
+    <main>
+      <nav id="header"></nav>
+
+      <div class="coperta-prezentare">
+        <div class="coperta-capri">
+          <div class="content-coperta">
+            <h2 class="titlu-coperta" href="#">
+              Noul Ford Capri 100% electric
+            </h2>
+            <p class="pret-coperta">De la 31.200€ TVA inclus</p>
+            <form>
+              <button
+                class="btn-conf"
+                onclick="window.location.href='pagini/ford-capri-page.html';"
+              >
+                Configurează
+              </button>
+
+              <button class="btn-test">Test drive</button>
+            </form>
+          </div>
+        </div>
+
+        <div class="coperta-puma">
+          <div class="content-coperta">
+            <h2 class="titlu-coperta" href="#">Noul Ford Puma</h2>
+            <p class="pret-coperta">De la 19.250€ TVA inclus</p>
+            <form>
+              <button class="btn-conf">Configurează</button>
+              <button class="btn-test">Test drive</button>
+            </form>
+          </div>
+        </div>
+
+        <div class="descriere">
+          <p>
+            GARANȚIE COMPLEXĂ 5 ANI ÎN LIMITA A 100.000 KM* CREDIT AUTO CU
+            DOBANDA FIXĂ ÎN LEI 6.99% **
+          </p>
+        </div>
+
+        <div class="coperta-kuga">
+          <div class="content-coperta">
+            <h2 class="titlu-coperta" href="#">Noul Ford Kuga</h2>
+            <p class="pret-coperta">De la 29.500€ TVA inclus</p>
+            <form>
+              <button class="btn-conf">Configurează</button>
+              <button class="btn-test">Test drive</button>
+            </form>
+          </div>
+        </div>
+
+        <div class="descriere">
+          <p>GARANȚIE COMPLEXĂ 5 ANI ÎN LIMITA A 100.000KM*</p>
+        </div>
+
+        <div class="coperta-explorer">
+          <div class="content-coperta">
+            <h2 class="titlu-coperta" href="#">
+              Noul Ford Explorer 100% electric
+            </h2>
+            <p class="pret-coperta">De la 28.800€ TVA inclus</p>
+            <form>
+              <button class="btn-conf">Configurează</button>
+              <button class="btn-test">Test drive</button>
+            </form>
+          </div>
+        </div>
+
+        <div class="coperta-autoutilitara">
+          <div class="content-coperta">
+            <h2 class="titlu-coperta" href="#">
+              MUNCEȘTE, RISCĂ, URMEAZĂ-ȚI DRUMUL, CÂȘTIGA, IAR MÂINE IA-O DE LA
+              CAPĂT
+            </h2>
+            <form>
+              <button class="btn-conf">Descopera</button>
+              <button class="btn-test">Cere oferta</button>
+            </form>
+          </div>
+        </div>
+
+        <div class="coperta-tranzit">
+          <div class="content-coperta">
+            <h2 class="titlu-coperta" href="#">Ford Tranzit</h2>
+            <p class="pret-coperta">AFACEREA TA ELECTRIFICATĂ</p>
+            <form>
+              <button class="btn-conf">Configurează</button>
+              <button class="btn-test">Test drive</button>
+            </form>
+          </div>
+        </div>
+
+        <div class="subtitlu-1">
+          <p>VEHICULE PENTRU FIECARE STIL DE VIAȚĂ</p>
+        </div>
+      </div>
+      <div class="slider-nav-content">
+        <nav class="slider-nav">
+          <ul>
+            <li><button data-filter="all">TOATE MODELELE</button></li>
+            <li><button data-filter="suv">SUV & CROSSOVER</button></li>
+            <li><button data-filter="electric">HYBRID & ELECTRIC</button></li>
+            <li><button data-filter="monovolum">MONOVOLUM</button></li>
+            <li><button data-filter="performanță">PERFORMANȚĂ</button></li>
+            <li>
+              <button data-filter="autoutliltare">VANS & PICK UPS</button>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="card-slider">
+          <button class="pre-btn">
+            <img src="../imagini/icons/back_btn.svg" />
+          </button>
+          <div class="slider-container">
+            <div class="content suv electric">
+              <a href="#">
+                <img
+                  src="../imagini/slider-card/ford_capri.png"
+                  alt="icon"
+                  class="icon-ford"
+                />
+                <h2 class="titlu-card">Ford Capri</h2>
+                <p class="descriere-card">
+                  Noul Ford Capri disponibil pentru test drive!
+                </p>
+                <form class="card-btn">
+                  <button class="card-buy-btn">Configurează</button>
+                  <button class="card-test-btn">Test drive</button>
+                </form>
+              </a>
+            </div>
+
+            <div class="content suv electric">
+              <a href="#">
+                <img
+                  src="../imagini/slider-card/ford_explorer.png"
+                  alt="icon"
+                  class="icon-ford"
+                />
+                <h2 class="titlu-card">Ford Explorer</h2>
+                <p class="descriere-card">
+                  Ford Explorer disponibil pentru test drive!
+                </p>
+                <form class="card-btn">
+                  <button class="card-buy-btn">Configurează</button>
+                  <button class="card-test-btn">Test drive</button>
+                </form>
+              </a>
+            </div>
+
+            <div class="content monovolum">
+              <a href="#">
+                <img
+                  src="../imagini/slider-card/ford_courier.png"
+                  alt="icon"
+                  class="icon-ford"
+                />
+                <h2 class="titlu-card">Ford Tourneo Courier</h2>
+                <p class="descriere-card">
+                  Noul Ford Courier disponibil pentru test drive!
+                </p>
+                <form class="card-btn">
+                  <button class="card-buy-btn">Configurează</button>
+                  <button class="card-test-btn">Test drive</button>
+                </form>
+              </a>
+            </div>
+
+            <div class="content suv electric">
+              <a href="#">
+                <img
+                  src="../imagini/slider-card/ford_puma.png"
+                  alt="icon"
+                  class="icon-ford"
+                />
+                <h2 class="titlu-card">Ford Puma</h2>
+                <p class="descriere-card">
+                  Noul Ford Puma disponibil pentru test drive!
+                </p>
+                <form class="card-btn">
+                  <button class="card-buy-btn">Configurează</button>
+                  <button class="card-test-btn">Test drive</button>
+                </form>
+              </a>
+            </div>
+
+            <div class="content suv electric performanță">
+              <a href="#">
+                <img
+                  src="../imagini/slider-card/ford_focus.png"
+                  alt="icon"
+                  class="icon-ford"
+                />
+                <h2 class="titlu-card">Ford Focus</h2>
+                <p class="descriere-card">
+                  Noul Ford Focus disponibil pentru test drive!
+                </p>
+                <form class="card-btn">
+                  <button class="card-buy-btn">Configurează</button>
+                  <button class="card-test-btn">Test drive</button>
+                </form>
+              </a>
+            </div>
+
+            <div class="content monovolum autoutliltare">
+              <a href="#">
+                <img
+                  src="../imagini/slider-card/ford_connect.png"
+                  alt="icon"
+                  class="icon-ford"
+                />
+                <h2 class="titlu-card">Ford Tourneo Connect</h2>
+                <p class="descriere-card">
+                  Noul Ford Connect disponibil pentru test drive!
+                </p>
+                <form class="card-btn">
+                  <button class="card-buy-btn">Configurează</button>
+                  <button class="card-test-btn">Test drive</button>
+                </form>
+              </a>
+            </div>
+
+            <div class="content suv electric">
+              <a href="#">
+                <img
+                  src="../imagini/slider-card/ford_kuga.png"
+                  alt="icon"
+                  class="icon-ford"
+                />
+                <h2 class="titlu-card">Ford Kuga</h2>
+                <p class="descriere-card">
+                  Noul Ford Kuga disponibil pentru test drive!
+                </p>
+                <form class="card-btn">
+                  <button class="card-buy-btn">Configurează</button>
+                  <button class="card-test-btn">Test drive</button>
+                </form>
+              </a>
+            </div>
+
+            <div class="content suv electric">
+              <a href="#">
+                <img
+                  src="../imagini/slider-card/ford_mustang_mach-e.png"
+                  alt="icon"
+                  class="icon-ford"
+                />
+                <h2 class="titlu-card">Mustang Mach-E</h2>
+                <p class="descriere-card">
+                  Noul Mustang Mach-E disponibil pentru test drive!
+                </p>
+                <form class="card-btn">
+                  <button class="card-buy-btn">Configurează</button>
+                  <button class="card-test-btn">Test drive</button>
+                </form>
+              </a>
+            </div>
+
+            <div class="content performanță">
+              <a href="#">
+                <img
+                  src="../imagini/slider-card/ford_mustang.png"
+                  alt="icon"
+                  class="icon-ford"
+                />
+                <h2 class="titlu-card">Ford Mustang</h2>
+                <p class="descriere-card">
+                  Noul Ford Mustang disponibil pentru test drive!
+                </p>
+                <form class="card-btn">
+                  <button class="card-buy-btn">Configurează</button>
+                  <button class="card-test-btn">Test drive</button>
+                </form>
+              </a>
+            </div>
+
+            <div class="content electric monovolum autoutliltare">
+              <a href="#">
+                <img
+                  src="../imagini/slider-card/ford_tourneo.png"
+                  alt="icon"
+                  class="icon-ford"
+                />
+                <h2 class="titlu-card">Ford Tourneo Custom</h2>
+                <p class="descriere-card">
+                  Noul Ford Tourneo disponibil pentru test drive!
+                </p>
+                <form class="card-btn">
+                  <button class="card-buy-btn">Configurează</button>
+                  <button class="card-test-btn">Test drive</button>
+                </form>
+              </a>
+            </div>
+
+            <div class="content suv performanță">
+              <a href="#">
+                <img
+                  src="../imagini/slider-card/ford_bronco.png"
+                  alt="icon"
+                  class="icon-ford"
+                />
+                <h2 class="titlu-card">Ford Bronco</h2>
+                <p class="descriere-card">
+                  Noul Ford Bronco disponibil pentru test drive!
+                </p>
+                <form class="card-btn">
+                  <button class="card-buy-btn">Configurează</button>
+                  <button class="card-test-btn">Test drive</button>
+                </form>
+              </a>
+            </div>
+
+            <div class="content performanță autoutliltare">
+              <a href="#">
+                <img
+                  src="../imagini/slider-card/ford_F150.png"
+                  alt="icon"
+                  class="icon-ford"
+                />
+                <h2 class="titlu-card">Ford F150</h2>
+                <p class="descriere-card">
+                  Ford F150 disponibil pentru test drive!
+                </p>
+                <form class="card-btn">
+                  <button class="card-buy-btn">Configurează</button>
+                  <button class="card-test-btn">Test drive</button>
+                </form>
+              </a>
+            </div>
+
+            <div class="content autoutliltare">
+              <a href="#">
+                <img
+                  src="../imagini/slider-card/ford_ranger.png"
+                  alt="icon"
+                  class="icon-ford"
+                />
+                <h2 class="titlu-card">Ford Ranger</h2>
+                <p class="descriere-card">
+                  Noul Ford Ranger disponibil pentru test drive!
+                </p>
+                <form class="card-btn">
+                  <button class="card-buy-btn">Configurează</button>
+                  <button class="card-test-btn">Test drive</button>
+                </form>
+              </a>
+            </div>
+
+            <div class="content autoutliltare">
+              <a href="#">
+                <img
+                  src="../imagini/slider-card/ford_transit.png"
+                  alt="icon"
+                  class="icon-ford"
+                />
+                <h2 class="titlu-card">Ford Tranzit</h2>
+                <p class="descriere-card">
+                  Noul Ford Tranzit disponibil pentru test drive!
+                </p>
+                <form class="card-btn">
+                  <button class="card-buy-btn">Configurează</button>
+                  <button class="card-test-btn">Test drive</button>
+                </form>
+              </a>
+            </div>
+
+            <div class="content autoutliltare">
+              <a href="#">
+                <img
+                  src="../imagini/slider-card/ford_transit_sasiu.png"
+                  alt="icon"
+                  class="icon-ford"
+                />
+                <h2 class="titlu-card">Tranzit Sasiu</h2>
+                <p class="descriere-card">
+                  Noul Sasiu Ford Tranzit disponibil pentru configurare!
+                </p>
+                <form class="card-btn">
+                  <button class="card-buy-btn">Configurează</button>
+                  <button class="card-test-btn">Solicita oferta</button>
+                </form>
+              </a>
+            </div>
+          </div>
+
+          <button class="next-btn">
+            <img src="../imagini/icons/forward_btn.svg" />
+          </button>
+        </div>
+      </div>
+    </main>
+
+    <div class="pre-footer">
+      <div class="pre-footer-content">
+        <ul>
+          <li>
+            <a href="#"
+              >Cauta Service
+              <img
+                src="../imagini/icons/expand_circle_right_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg"
+                alt=""
+            /></a>
+          </li>
+          <li>
+            <a href="#"
+              >Configureaza <img
+              src="../imagini/icons/expand_circle_right_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg""
+              alt=""></a
+            >
+          </li>
+          <li>
+            <a href="#"
+              >Programeaza Test Drive <img
+              src="../imagini/icons/expand_circle_right_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg""
+              alt=""></a
+            >
+          </li>
+        </ul>
+      </div>
     </div>
-
-    <div class="continut-pagina">
-      <div class="ford-capri"><a href="#"><img src="../imagini/1-2024Ford_ElectricCapri_35.jpg"></a></div>
-      <div class="pret-pagina-principala"><p>DE LA 41,900€ TVA inclus</p></div>
-
-      <div class="ford-puma"><a href="#"><img src="../imagini/noul-ford-puma-1200x600.jpg"></a></div>
-      <div class="pret-pagina-principala"><p>GARANȚIE COMPLEXĂ 5 ANI ÎN LIMITA A 100.000 KM* PREȚ PROMOȚIONAL DE LA 16,990€ + TVA **</p></div>
-
-      <div class="ford-kuga"><a href="#"><img src="../imagini/2023_FORD_KUGA_ACTIVE_ST-LINE_01-scaled.jpg"></a></div>
-      <div class="pret-pagina-principala"><p>GARANȚIE COMPLEXĂ 5 ANI ÎN LIMITA A 100.000KM* PREȚ PROMOȚIONAL DE LA 21,900€ + TVA **</p></div>
-
-      <div class="ford-explorer"><a style="display: block;" href="#"><img style="display: block;" src="../imagini/ford-explorer-electric.jpeg"></a></div>
-     
-      <div class="ford-mach-e"><a style="display: block;" href="#"><img style="display: block;" src="../imagini/ford-mustang-mach-E.jpg.webp"></a></div>
-      <div class="pret-pagina-principala"><p>Inclus Pachetul Ford Protect Electric inclus Livrare imediata din stoc *</p></div>
-
-      <div class="vehicule-comerciale"><a style="display: block;" href="#"><img style="display: block;" src="../imagini/pilonul-afacerii-tale-vizual-1200x600.jpg"></a></div>
-      <div class="ford-tranzit"><a style="display: block;" href="#"><img style="display: block;" src="../imagini/all-electric-e-transit-gal-1.jpg"></a></div>
-
-      <div class="subtitlu"><h1>VEHICULE PENTRU FIECARE STIL DE VIAȚĂ</h1></div>
+    <div class="termeni-conditii">
+      <a href="#">Termeni si Condiții</a>
     </div>
+    <footer>
+      <div class="cuprins">
+        <ul class="ul-modele">
+          <li class="titlu-cuprins"><h3>MODELE</h3></li>
+          <li><a href="#">Autoturisme</a></li>
+          <li><a href="#">Vehicule comerciale</a></li>
+          <li><a href="#">Electric & Hybrid</a></li>
+          <li><a href="#">Mașini de familie</a></li>
+          <li><a href="#">Mașini de oraș</a></li>
+          <li><a href="#">Mașini de performanță</a></li>
+          <li><a href="#">SUV-url</a></li>
+          <li><a href="#">ST-Line</a></li>
+          <li><a href="#">Monovolum</a></li>
+        </ul>
+        <ul class="info-ford">
+          <li class="titlu-cuprins"><h3>LUMEA FORD</h3></li>
+          <li><a href="#">Despre Ford</a></li>
+          <li><a href="#">Istoria companiei</a></li>
+          <li><a href="#">Evenimente si saloane auto</a></li>
+          <li><a href="#">Cariere</a></li>
+          <li><a href="#">Mediul înconjurător</a></li>
+        </ul>
+        <ul class="ul-masini">
+          <li class="titlu-cuprins"><h3>MAȘINI</h3></li>
+          <li><a href="#">Noul Explorer</a></li>
+          <li><a href="#">Noul Puma Gen-E</a></li>
+          <li><a href="#">Noul Tourneo Courier</a></li>
+          <li><a href="#">Noul Puma</a></li>
+          <li><a href="#">Noul Focus</a></li>
+          <li><a href="#">Noul Tourneo Connect</a></li>
+          <li><a href="#">Noul Kuga</a></li>
+          <li><a href="#">Mustang Mach-E</a></li>
+          <li><a href="#">Noul Mustang</a></li>
+          <li><a href="#">Explorer</a></li>
+          <li><a href="#">Noul Bronco</a></li>
+          <li><a href="#">Noul Tourneo Custom</a></li>
+        </ul>
+      </div>
 
-    <script src="script/sidebar.js"></script>
+      <div class="social-media-tags">
+        <ul>
+          <li>
+            <a target="_blank" href="https://www.facebook.com/FordRomania/"
+              ><img
+                src="imagini/icons/facebook.png.renditions.small.png"
+                alt=""
+            /></a>
+          </li>
+          <li>
+            <a target="_blank" href="https://www.instagram.com/ford_romania/"
+              ><img
+                src="imagini/icons/instagram.png.renditions.small.png"
+                alt=""
+            /></a>
+          </li>
+          <li>
+            <a target="_blank" href="https://www.youtube.com/fordromania"
+              ><img
+                src="imagini/icons/youtube-outlined.png.renditions.small.png"
+                alt=""
+            /></a>
+          </li>
+          <li>
+            <a
+              target="_blank"
+              href="https://www.linkedin.com/showcase/ford-romania/"
+              ><img
+                src="imagini/icons/linkedin.png.renditions.small.png"
+                alt=""
+            /></a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+
+    <script src="../script/slider.js" defer></script>
   </body>
 </html>
