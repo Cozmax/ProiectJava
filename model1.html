@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="..\style/model1.css">
+  <link rel="shortcut icon" class="logo" type="image/x-icon" href="..\imagini\coperta\51aB7yqrJsL._AC_UF894_1000_QL80_-removebg-preview.png" >
+  <title>Noul ford focus</title>
+  <script src="https://kit.fontawesome.com/7003aea01d.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Anton&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Vast+Shadow&display=swap"
+    rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Anton&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Vast+Shadow&display=swap"
+    rel="stylesheet">
+    <link rel="stylesheet" href="../style/style.css" />
+
+
+
+
+
+
+</head>
+
+<body>
+
+  <div class="header">
+    <div class="menuButton">
+      <button onclick="dispare(1)" class="buttonM">
+        <div class="menu"></div>
+        <div class="menu"></div>
+      </button>
+    </div>
+    <div class="photodiv"><img class="photo" src="..\imagini/coperta/ford-go-further.png.renditions.small.png"></div>
+    <div class="profil"><i class="fa-regular fa-user fa-lg"></i></div>
+  </div>
+
+
+  <div id="sideb" class="sidebar">
+    <button onclick="dispare(0)" class="xButton"><i class="fa-solid fa-x fa-2xl" style="color: #ffffff;"></i></button>
+  </div>
+  <div class="vid">
+    <div class="video-container">
+      <video autoplay muted loop>
+        <source src="..\video\The legend.mp4" type="video/mp4">
+        <source src="..\video\The legend.ogg" type="video/ogg">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+    <div class="textYoutube">
+      <p class="textp1">Noul Ford Capri® 100% Electric</p>
+      <p class="textp2">Legenda s-a întors</p>
+    </div>
+
+  </div>
+  <div class="texts1">
+    <div class="linetxt1">
+      <p
+        style=" font-family: Anton, serif;font-weight: 400;font-style: normal;color: #ffffff;font-size:2vw;margin-bottom:1vw;margin-left:1vw;width:max;">
+        De la 41900€</p>ional reco
+      <div class="linetxt2">
+        <p
+          style=" font-family: Anton, serif;font-weight: 400;font-style: normal;color: #ffffff;font-size:2vw;margin-bottom:1vw;">
+          Preț promoțmandat cu TVA inclus prin Programul Rabla Plus</p>
+      </div>
+    </div>
+    <div class="line"></div>
+    <div class="stats">
+      <div class="stat">
+        <p class="stat-title">0-100 km/h</p>
+        <p class="stat-value" data-target="5.3">0</p>
+        <span>s</span>
+      </div>
+      <div class="stat">
+        <p class="stat-title">Autonomie maximă până la</p>
+        <p class="stat-value" data-target="627">0</p>
+        <span>km</span>
+      </div>
+      <div class="stat">
+        <p class="stat-title">Timp de încărcare fast charge</p>
+        <p class="stat-value" data-target="26">0</p>
+        <span>min</span>
+      </div>
+    </div>
+    <div>
+      <p
+        style="font-family: Anton, serif;font-weight: 400;font-style: normal;color: #ffffff;font-size:2vw;padding-left: 18%;padding-right: 15%;padding-top:10%;">
+        Noul Ford Capri® este aici – sufletul unei mașini sport, într-un SUV practic. Un crossover coupé 100%
+        electric cu tehnologie avansată, design emblematic și autonomie pentru toată ziua. Disponibil în două serii de
+        echipare.
+
+      </p>
+    </div>
+    <div style=" display:flex;align-items: center;justify-content: center;">
+      <img src="..\imagini\poze\Ford-Capri-1.jpg" style="width: 60%;border-radius:5%;">
+    </div>
+    <div>
+      <p
+        style="font-family: Anton, serif;font-weight: 400;font-style: normal;color: #ffffff;font-size:2vw;padding-left: 30%;padding-right: 25%;padding-top:8%;">
+        Sufletul modelului clasic Ford Capri®, reinventat cu un design nou, modern.
+      </p>
+    </div>
+    <div class="color-picker">
+      <h2>Aventură în culori</h2>
+      <div class="car-display">
+        <img id="carImage" src="..\imagini\poze\galben.jpg" alt="Car">
+      </div>
+      <div class="color-options">
+        <button class="color-btn" data-color="yellow" data-img="..\imagini\poze\galben.jpg"
+          style="background-color: #ffd700;"></button>
+        <button class="color-btn" data-color="white" data-img="..\imagini\poze/alb.jpg"
+          style="background-color: #ffffff;"></button>
+        <button class="color-btn" data-color="black" data-img="..\imagini\poze/negru.jpg"
+          style="background-color: #000000;"></button>
+        <button class="color-btn" data-color="blue" data-img="..\imagini\poze/albastru.jpg"
+          style="background-color: #0000ff;"></button>
+        <button class="color-btn" data-color="red" data-img="..\imagini\poze/rosu.jpg" style="background-color: #ff0000;"></button>
+      </div>
+      <div class="car-info">
+        <h3 id="colorName">Vivid Yellow</h3>
+        <p>Disponibil pe toate modelele.</p>
+        <p>Modelul prezentat este un Ford Capri Select</p>
+      </div>
+    </div>
+    <div class="txt2">
+       <img src="..\imagini\poze\Screenshot 2025-01-03 130917.jpg" class="poza2">
+
+      <div >
+        <p style="font-size: 3.5vw;
+                font-family: Anton, sans-serif;
+                font-weight: 400;
+                margin: 0;color: #ffffff;padding-left:5%;width:100%;padding-bottom: 11%;padding-top:3%;"> Scaune sport
+        </p>
+        <p style="font-size: 1.5vw;
+             font-family: Anton, sans-serif;
+             margin: 0;color: #ffffff;padding-left:5%;width:fit-content">Simți că ai sprijin, indiferent de drumul pe
+          care te afli. Scaunul sport încălzit al șoferului, reglabil pe 12 direcții, cu tetieră integrată, îți menține
+          stabilitatea în fiecare curbă, cu masaj lombar suplimentar pentru confort total. Volanul încălzit oferă
+          căldură suplimentară în timpul lunilor de iarnă.
+        </p>
+      </div>
+    </div>
+  </div>
+    <div class="txt3">
+      <img src="..\imagini\poze\stocare.jpeg" class="poza2">
+      <img src="..\imagini\poze\stocare2.jpeg" style=" width:50%;">
+    </div>
+<div class="txt3">
+  <div style="display: flex;flex:1; flex-direction: column;"> <p style="font-size: 2.5vw;
+    font-family: Anton, sans-serif;
+    margin: 0;color: #ffffff;padding-left:5%;width:fit-content">MegaConsole™</p>
+    <p style="font-size: 1.5vw;
+    font-family: Anton, sans-serif;
+    margin: 0;color: #ffffff;padding-left:5%;width:fit-content">Spațiul de depozitare MegaConsole are până la 17 litri de spațiu, ceea ce înseamnă suficient spațiu pentru o geantă de mână mare, un laptop sau mai multe sticle de 1,5 litri.</p>
+  </div>
+  <div style="display: flex;flex:1;flex-direction: column;">
+    <p style="font-size: 2.5vw;
+    font-family: Anton, sans-serif;
+    margin: 0;color: #ffffff;padding-left:5%;width:fit-content">Spațiul meu privat Private Locker</p>
+    <p style="font-size: 1.5vw;
+    font-family: Anton, sans-serif;
+    margin: 0;color: #ffffff;padding-left:5%;width:fit-content;height: fit-content;">Nu este la vedere și este încuiat – păstrează obiectele personale în siguranță cu spațiul de depozitare care poate fi încuiat în spatele ecranului SYNC® Move.</p>
+</div>
+
+  </div>
+  <div style="display:flex; align-items: center;justify-content: center;padding-top:6%;background-color: #ffffff;flex-direction: column;margin-bottom:10%;">
+    <p style="font-size: 2.5vw;
+    font-family: Anton, sans-serif;font-weight:200;
+    margin: 0;color: #000000;padding-left:0;width:fit-content;padding-right: 50%;">Atitudine electrică</p>
+      <div style="display:flex;flex-direction: row;padding-left:15%;">
+        <img src="..\imagini\poze\Ford-Capri-electric-1.jpeg" style="width:60%;padding-right:1%;border-radius:3vw;">
+        <div style="display: flex;flex-direction: column;">
+          <img src="..\imagini\poze\Ford-Capri-1.jpg" style="width: 70%;padding-bottom: 1%;border-radius:2vw;">
+         <img src="..\imagini/poze/ford-capri-2024-nieuws-aa366d.jpg "style="width: 70%;border-radius:2vw;">
+        </div>
+
+    </div>
+  </div>
+<div style="background-color: #000000;display:flex;flex-direction: column;align-items: center;justify-content: center;"> 
+  <div style="width:100%;height:15vw;background-color: #000000;"> 
+    <p style="color: #ffffff;padding-top:5vw;font-size: 3.5vw;
+      font-family: Roboto, serif;
+  font-weight:bold;
+  font-style: normal;
+    margin: 0;color: #ffffff;padding-left:20%;">Cea mai recentă tehnologie</p>
+  <div class="container">
+    <button id="openModal" style="margin-left:20%;">Află mai multe</button>
+  </div>
+  
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      
+      <div class="modal-header">
+        <span class="header-text">Noua tehnologie Ford Capri®</span>
+        <button id="closeModal" class="close-btn">Închide</button>
+      </div>
+  
+      <div class="modal-body">
+        <img src="..\imagini\poze\Screenshot 2025-01-08 102138.jpg" style="width: 100%;margin:0;">
+        <div class="miniwindow" style="padding:5%;padding-top:2%;">
+          <h1>Cea mai recentă tehnologie</h1>
+          <h2>Planificator de călătorii pentru vehicule electrice</h2>
+          <p>Planificatorul de călătorii EV se asigură că Ford Capri este pregătit pentru încărcare la cea mai bună capacitate a sa.</p>
+          <h2>Precondiționarea cabinei</h2>
+          <p>Zi călduroasă? Noapte rece? Precondiționează temperatura din interiorul mașinii înainte de a porni, cu ajutorul aplicației FordPass™. De asemenea, o poți programa în avans din interiorul vehiculului.</p>
+          <h2>Ecran tactil conectat</h2>
+          <p>Sistemul Ford SYNC® este dotat cu navigație prin satelit conectată la Cloud pentru a oferi informații în timp real despre rețeaua publică de încărcare. Totul pe ecranul tactil mare, reglabil, de 14,6".</p>
+        <div><h3 style="margin-top:15%;font-size:2vw;font-weight:bolder">Asistență la parcare</h3></div>
+        <div class="tombok">
+          <div class="tomb"><img src="..\imagini\poze\e5biuvndde6zlmd1wix6ce4hp8wo.jpeg" class="pozamini"><h4 style="font-size:2vw;margin-bottom:0;">Asistență Activă la parcare</h4><p>Te ajută să elimini stresul din timpul parcării. Ford Capri® va detecta spațiile disponibile și va controla direcția în timpul unei manevre de parcare prin simpla apăsare a unui buton.</p></div>
+          <div class="tomb"><img src="..\imagini\poze\ford-cx740l-eu-12_CX740L_INTERIOR_360-CAMERA_CC-3x2-1000x667-detail-on-display-with-360-camera.jpg" class="pozamini"><h4 style="font-size:2vw;margin-bottom:0;">Cameră 360°</h4><p>Camerele din partea din față, laterală și din spate a mașinii oferă o vedere în timp real a spațiului din jurul tău pentru a te ajuta să parchezi.</p></div>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <img src="..\imagini\poze\csaj.jpg" style="width:60%;">
+</div>
+<section id="configurator" class="configurator">
+  <h2>Configurează-ți Ford-ul</h2>
+  <div class="model-buttons">
+      <button class="model-btn active" data-model="all">Toate modelele</button>
+      <button class="model-btn" data-model="select">Select</button>
+      <button class="model-btn" data-model="premium">Premium</button>
+  </div>
+  <div class="steps">
+      <div class="step">
+          <h3>Alege modelul</h3>
+          <div class="model-options">
+              <div class="model-card" data-category="select">
+                  <img src="poze/ford-select1.jpg" alt="Model Select 1">
+                  <h4>CUV 5 uși - Select</h4>
+                  <p>De la 36,300€</p>
+                  <p>Autonomie standard, Capacitate baterie: 52kWh, 125kW / 170CP</p>
+                  <ul>
+                      <li>Timp de încărcare: 25 min</li>
+                      <li>Putere maximă: 125kW / 170CP</li>
+                      <li>Accelerație 0-100 km/h: 8.7 sec</li>
+                  </ul>
+                  <div class="config-options">
+                      <h4>Alege culoarea</h4>
+                      <div class="color-options">
+                          <button class="color-btn" data-color="yellow" style="background-color: #ffd700;"></button>
+                          <button class="color-btn" data-color="white" style="background-color: #ffffff;"></button>
+                          <button class="color-btn" data-color="black" style="background-color: #000000;"></button>
+                          <button class="color-btn" data-color="blue" style="background-color: #0000ff;"></button>
+                      </div>
+                      <h4>Alege jantele</h4>
+                      <select class="wheels-select">
+                          <option value="standard">Standard</option>
+                          <option value="sport">Sport</option>
+                          <option value="luxury">Luxury</option>
+                      </select>
+                  </div>
+              </div>
+              <div class="model-card" data-category="select">
+                  <img src="poze/ford-select2.jpg" alt="Model Select 2">
+                  <h4>CUV 5 uși - Select</h4>
+                  <p>De la 41,900€</p>
+                  <p>Autonomie extinsă, Capacitate baterie: 77kWh, 210kW / 286CP</p>
+                  <ul>
+                      <li>Timp de încărcare: 28 min</li>
+                      <li>Putere maximă: 210kW / 286CP</li>
+                      <li>Accelerație 0-100 km/h: 6.4 sec</li>
+                  </ul>
+                  <div class="config-options">
+                      <h4>Alege culoarea</h4>
+                      <div class="color-options">
+                          <button class="color-btn" data-color="yellow" style="background-color: #ffd700;"></button>
+                          <button class="color-btn" data-color="white" style="background-color: #ffffff;"></button>
+                          <button class="color-btn" data-color="black" style="background-color: #000000;"></button>
+                          <button class="color-btn" data-color="blue" style="background-color: #0000ff;"></button>
+                      </div>
+                      <h4>Alege jantele</h4>
+                      <select class="wheels-select">
+                          <option value="standard">Standard</option>
+                          <option value="sport">Sport</option>
+                          <option value="luxury">Luxury</option>
+                      </select>
+                  </div>
+              </div>
+              <div class="model-card" data-category="premium">
+                  <img src="poze/ford-select3.jpg" alt="Model Select 3">
+                  <h4>CUV 5 uși - Premium</h4>
+                  <p>De la 46,250€</p>
+                  <p>AWD, Autonomie extinsă, Capacitate baterie: 79kWh, 250kW / 340CP</p>
+                  <ul>
+                      <li>Timp de încărcare: 26 min</li>
+                      <li>Putere maximă: 250kW / 340CP</li>
+                      <li>Accelerație 0-100 km/h: 5.3 sec</li>
+                  </ul>
+                  <div class="config-options">
+                      <h4>Alege culoarea</h4>
+                      <div class="color-options">
+                          <button class="color-btn" data-color="yellow" style="background-color: #ffd700;"></button>
+                          <button class="color-btn" data-color="white" style="background-color: #ffffff;"></button>
+                          <button class="color-btn" data-color="black" style="background-color: #000000;"></button>
+                          <button class="color-btn" data-color="blue" style="background-color: #0000ff;"></button>
+                      </div>
+                      <h4>Alege jantele</h4>
+                      <select class="wheels-select">
+                          <option value="standard">Standard</option>
+                          <option value="sport">Sport</option>
+                          <option value="luxury">Luxury</option>
+                      </select>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  <button id="saveConfig" class="configure-btn">Salvează configurația</button>
+</section>
+<footer>
+  <div class="cuprins">
+    <ul class="ul-modele">
+      <li class="titlu-cuprins"><h3>MODELE</h3></li>
+      <li><a href="#">Autoturisme</a></li>
+      <li><a href="#">Vehicule comerciale</a></li>
+      <li><a href="#">Electric & Hybrid</a></li>
+      <li><a href="#">Mașini de familie</a></li>
+      <li><a href="#">Mașini de oraș</a></li>
+      <li><a href="#">Mașini de performanță</a></li>
+      <li><a href="#">SUV-url</a></li>
+      <li><a href="#">ST-Line</a></li>
+      <li><a href="#">Monovolum</a></li>
+    </ul>
+    <ul class="info-ford">
+      <li class="titlu-cuprins"><h3>LUMEA FORD</h3></li>
+      <li><a href="#">Despre Ford</a></li>
+      <li><a href="#">Istoria companiei</a></li>
+      <li><a href="#">Evenimente si saloane auto</a></li>
+      <li><a href="#">Cariere</a></li>
+      <li><a href="#">Mediul înconjurător</a></li>
+    </ul>
+    <ul class="ul-masini">
+      <li class="titlu-cuprins"><h3>MAȘINI</h3></li>
+      <li><a href="#">Noul Explorer</a></li>
+      <li><a href="#">Noul Puma Gen-E</a></li>
+      <li><a href="#">Noul Tourneo Courier</a></li>
+      <li><a href="#">Noul Puma</a></li>
+      <li><a href="#">Noul Focus</a></li>
+      <li><a href="#">Noul Tourneo Connect</a></li>
+      <li><a href="#">Noul Kuga</a></li>
+      <li><a href="#">Mustang Mach-E</a></li>
+      <li><a href="#">Noul Mustang</a></li>
+      <li><a href="#">Explorer</a></li>
+      <li><a href="#">Noul Bronco</a></li>
+      <li><a href="#">Noul Tourneo Custom</a></li>
+    </ul>
+  </div>
+
+  <div class="social-media-tags">
+    <ul>
+      <li>
+        <a target="_blank" href="https://www.facebook.com/FordRomania/"
+          ><img
+            src="imagini/icons/facebook.png.renditions.small.png"
+            alt=""
+        /></a>
+      </li>
+      <li>
+        <a target="_blank" href="https://www.instagram.com/ford_romania/"
+          ><img
+            src="imagini/icons/instagram.png.renditions.small.png"
+            alt=""
+        /></a>
+      </li>
+      <li>
+        <a target="_blank" href="https://www.youtube.com/fordromania"
+          ><img
+            src="imagini/icons/youtube-outlined.png.renditions.small.png"
+            alt=""
+        /></a>
+      </li>
+      <li>
+        <a
+          target="_blank"
+          href="https://www.linkedin.com/showcase/ford-romania/"
+          ><img
+            src="imagini/icons/linkedin.png.renditions.small.png"
+            alt=""
+        /></a>
+      </li>
+    </ul>
+  </div>
+</footer>
+  <script src="..\script\script.js"></script>
+  <script src="..\script\script1.js"></script>
+</body>
+
+</html>

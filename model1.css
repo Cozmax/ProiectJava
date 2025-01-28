@@ -1,0 +1,463 @@
+body,html {
+    margin: 0;
+    padding:0;
+    width:100%;
+    height:100%;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: transparent;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.header.scrolled {
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.header .menuButton .menu,
+.header .photodiv .photo,
+.header .profil i {
+    transition: color 0.3s ease, filter 0.3s ease;
+}
+
+.header .menuButton .menu {
+    background-color: white;
+}
+
+.header.scrolled .menuButton .menu {
+    background-color: black; 
+}
+
+.header .photodiv .photo {
+    filter: brightness(0) invert(1); 
+}
+
+.header.scrolled .photodiv .photo {
+    filter: none; 
+}
+
+.header .profil i {
+    color: white; 
+}
+
+.header.scrolled .profil i {
+    color: black; 
+}
+
+.menuButton {
+    flex: 1;
+}
+
+.buttonM {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.menu {
+    width: 35px;
+    height: 5px;
+    background-color: black;
+    margin: 6px 0;
+}
+
+.photodiv {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.photo {
+    width: 125px;
+}
+
+.profil {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sidebar {
+    background-color: #00142e;
+    width: 300px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    z-index: 1000;
+    padding: 20px;
+    color: white;
+}
+
+.xButton {
+    background-color: #00142e;
+    border: none;
+}
+.vid{
+    display:flex;
+    flex-direction: column; 
+    position: relative;
+    margin:0;
+    padding:0;
+    background-color: black;
+    
+}
+
+.video-container {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    position: relative;
+}
+.video-container video {
+    width: 100%;
+    height: auto;
+    
+}
+
+.textYoutube {
+    position: absolute;
+    bottom: 0; 
+    left: 0;
+    width: 100%;
+    padding:0;
+    background-color:transparent;
+    text-align: center;
+    color:white;
+}
+
+.textp1, .textp2 {
+    font-size: 4vw;
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    margin: 0;
+}
+.texts1{
+background-color: black;
+margin: 0;
+display: flex;
+flex-direction: column;
+
+   
+}
+.line {
+    width: 0;
+    height: 4px;
+    background-color: #ffffff;
+    transition: width 0.5s ease-in-out;
+    margin-top: 10px;
+}
+
+.texts1.visible .line {
+    width: 100%; 
+}
+.linetxt1{
+    display: flex;
+    flex-direction: row;
+}
+.linetxt2{
+    padding-left:58%;
+}
+.stats {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top:0;
+    color:white;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  .stat {
+    text-align: center;
+  }
+  
+  .stat-title {
+    font-size: 1.2vw;
+    color: white;
+    margin-bottom: 5px;
+  }
+  
+  .stat-value {
+    font-size: 2.5vw;
+    font-weight: bold;
+    color: white;
+    margin: 3px;
+  }
+  .color-picker {
+    text-align: center;
+    font-family: Arial, sans-serif;
+  }
+  
+  .car-display img {
+    width: 30%;
+    margin-bottom: 20px;
+    border-style: solid;
+    border-width:5px;
+    border-color: rgb(0, 0, 0);
+    border-radius: 20px;
+  }
+  
+  .color-options {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .color-btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid #00142e;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  .color-btn:hover {
+    transform: scale(1.1);
+  }
+  
+  .car-info {
+    margin-top: 20px;
+  }
+  
+  .configure-btn {
+    background-color: #00142e;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .configure-btn:hover {
+    background-color: #0044cc;
+  }
+  .txt2{
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+    border-style:solid;border-bottom-color: #ffffff
+  }
+  .poza2{
+    width:50%;
+    border-right-style:solid;border-right-color: #ffffff;
+   
+  }
+  .txt3{
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+    height:fit-content;
+  }
+  
+  button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Modal háttér */
+  .modal {
+    display: none; /* Alapértelmezés szerint rejtett */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Háttér elsötétítése */
+    backdrop-filter: blur(5px); /* Háttér homályosítása */
+    overflow: hidden; /* Az oldal nem görgethető */
+  }
+  
+  /* Modal tartalom */
+  .modal-content {
+    background-color: white;
+    margin: 10% auto;
+    border-radius: 10px;
+    width: 50%;
+    max-height: 70%; /* Maximális magasság */
+    display: flex;
+    flex-direction: column;
+    overflow: hidden; /* Fix header + görgethető body */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Fix navigációs sáv */
+  .modal-header {
+    background-color: #f1f1f1;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    position: sticky;
+    top: 0; /* Fix pozíció */
+    z-index: 10;
+  }
+  
+  .header-text {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  /* Bezárás gomb a navigációs sávon */
+  .close-btn {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  
+  .close-btn:hover {
+    background-color: #d93636;
+  }
+  
+  /* Görgethető tartalom */
+  .modal-body {
+    padding:0;
+    overflow-y: auto; /* Görgethető test */
+  }
+  .miniwindow p{
+    font-size:1vw;
+  }
+  .tombok {
+    display: flex;
+    flex-direction: row;
+    align-content: space-between;
+  }
+  .pozamini{
+    width:100%;
+    border-radius:15px;
+    height:auto;
+ 
+  }
+  .tomb{
+    padding:2%;
+    display: flex;
+    flex-direction: column;
+    height:auto;
+    width:100%;
+  }
+  .configurator {
+    padding: 40px 20px;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 1200px;
+}
+
+.configurator h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2em;
+    color: #333;
+}
+
+.model-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.model-btn {
+    padding: 10px 20px;
+    border: 2px solid #00142e;
+    background-color: white;
+    color: #00142e;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.model-btn.active {
+    background-color: #00142e;
+    color: white;
+}
+
+.steps {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 20px;
+}
+
+.model-options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.model-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 300px;
+}
+
+.model-card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.model-card h4 {
+    font-size: 1.5em;
+    color: #00142e;
+}
+
+.model-card p {
+    font-size: 1em;
+    color: #333;
+}
+
+.model-card ul {
+    list-style: none;
+    padding: 0;
+}
+
+.model-card ul li {
+    font-size: 0.9em;
+    color: #666;
+    margin-bottom: 5px;
+}
+
+.configure-btn {
+    display: block;
+    margin: 20px auto;
+    padding: 15px 30px;
+    background-color: #00142e;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    text-align: center;
+}
+
+.configure-btn:hover {
+    background-color: #0044cc;
+}
