@@ -19,32 +19,29 @@
 
 
 
+    <script type="text/javascript" src="../script/sidebar.js"></script>
+    <script>
+      fetch('header1.html')
+          .then(response => response.text())
+          .then(data => {
+              document.getElementById('header').innerHTML = data;
+          });
 
+    </script>
 
 </head>
 
 <body>
 
-  <div class="header">
-    <div class="menuButton">
-      <button onclick="dispare(1)" class="buttonM">
-        <div class="menu"></div>
-        <div class="menu"></div>
-      </button>
-    </div>
-    <div class="photodiv"><img class="photo" src="..\imagini/coperta/ford-go-further.png.renditions.small.png"></div>
-    <div class="profil"><i class="fa-regular fa-user fa-lg"></i></div>
+  <!--  Navbar General  -->
+  <div id="header">
   </div>
-
-
-  <div id="sideb" class="sidebar">
-    <button onclick="dispare(0)" class="xButton"><i class="fa-solid fa-x fa-2xl" style="color: #ffffff;"></i></button>
-  </div>
+  <!--^ Navbar General ^-->
   <div class="vid">
     <div class="video-container">
       <video autoplay muted loop>
-        <source src="..\video\The legend.mp4" type="video/mp4">
-        <source src="..\video\The legend.ogg" type="video/ogg">
+        <source src="../video/The legend.mp4" type="video/mp4">
+        <source src="../video/The legend.ogg" type="video/ogg">
         Your browser does not support the video tag.
       </video>
     </div>
@@ -230,7 +227,6 @@
           <h3>Alege modelul</h3>
           <div class="model-options">
               <div class="model-card" data-category="select">
-                  <img src="poze/ford-select1.jpg" alt="Model Select 1">
                   <h4>CUV 5 uși - Select</h4>
                   <p>De la 36,300€</p>
                   <p>Autonomie standard, Capacitate baterie: 52kWh, 125kW / 170CP</p>
@@ -256,7 +252,6 @@
                   </div>
               </div>
               <div class="model-card" data-category="select">
-                  <img src="poze/ford-select2.jpg" alt="Model Select 2">
                   <h4>CUV 5 uși - Select</h4>
                   <p>De la 41,900€</p>
                   <p>Autonomie extinsă, Capacitate baterie: 77kWh, 210kW / 286CP</p>
@@ -282,7 +277,6 @@
                   </div>
               </div>
               <div class="model-card" data-category="premium">
-                  <img src="poze/ford-select3.jpg" alt="Model Select 3">
                   <h4>CUV 5 uși - Premium</h4>
                   <p>De la 46,250€</p>
                   <p>AWD, Autonomie extinsă, Capacitate baterie: 79kWh, 250kW / 340CP</p>
