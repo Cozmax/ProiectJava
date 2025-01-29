@@ -42,6 +42,17 @@ app.get('/modeleMasini', async (req, res) => {
     }
 });
 
+app.get('/detaliiMasini', async (req, res) => {
+    try {
+        const pool = await sql.connect(sqlCONFIG);
+        const result = await pool.request().query('SELECT * FROM DetaliiMasini');
+        res.json(result.recordset); // Rezultat JSON!!!
+    } catch (err) {
+        console.error('Eroare query:', err);
+        res.status(500).json({ error: 'Eroare' });
+    }
+});
+
 app.listen(port, () => {
     console.log(`Server is running on http://localhost:${port}`);
 });
