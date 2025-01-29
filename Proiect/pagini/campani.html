@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CAMPANI</title>
+
+    <script>
+      fetch('header1.html')
+          .then(response => response.text())
+          .then(data => {
+              document.getElementById('header').innerHTML = data;
+          });
+
+          document.addEventListener("DOMContentLoaded", function () {
+    const buttons = document.querySelectorAll(".custom-bar-item");
+
+    buttons.forEach(button => {
+        button.addEventListener("click", function () {
+            // Elimină clasa 'active' de la toate butoanele
+            buttons.forEach(btn => btn.classList.remove("active"));
+
+            // Adaugă clasa 'active' butonului apăsat
+            this.classList.add("active");
+        });
+    });
+});
+    </script>
+
+  <link rel="stylesheet" href="../style/campani.css">
+  <link rel="stylesheet" href="../style/style.css">
+
+  </head>
+
+  <script defer src="../script/campani.js"></script>
+
+  <body>
+    <!--  Navbar General  -->
+    <div id="header">
+    </div>
+    <!--^ Navbar General ^-->
+
+    
+  
+  <!-- Video Banner -->
+  <section class="youtube-banner">
+    <iframe 
+        src="https://www.youtube.com/embed/pdFBezwvMd8?autoplay=1&mute=1&loop=1&playlist=pdFBezwvMd8&cc_load_policy=0&modestbranding=1&controls=0&showinfo=0"
+        frameborder="0"
+        allow="autoplay; fullscreen"
+        allowfullscreen>
+    </iframe>
+    <div class="overlay">
+      <h2>Campanii Ford Proleasing Motors</h2>
+        <h1>Oferte speciale pentru modelele Ford</h1>
+        <a href="#campanii" class="btn">Vezi Campanii</a>
+    </div>
+</section>
+  
+  <!-- Bara de navigație -->
+  <nav class="campaign-nav">
+      <button class="tab active" data-filter="toate">Toate Campaniile</button>
+      <button class="tab" data-filter="auto">Campanii Auto</button>
+      <button class="tab" data-filter="service">Campanii Service</button>
+      <button class="tab" data-filter="piese">Campanii Piese / Accesorii OEM</button>
+  </nav>
+  
+  <!-- Lista Campaniilor -->
+  <section id="campanii" class="campaigns-container">
+      <div class="campaign-card auto">
+          <img src="../imagini/imagini-campani/Img1.jpg" alt="1">
+          <h3>Oferte exclusive pentru autoturisme Ford</h3>
+          <p>Descoperă cele mai bune oferte pentru autoturisme Ford. Reduceri speciale și condiții excelente de finanțare.</p>
+          <br><br>
+          <a href="#" class="btn">Află mai mult</a>
+      </div>
+      <div class="campaign-card auto">
+          <img src="../imagini/imagini-campani/Img2.jpg" alt="2">
+          <h3>Promoții speciale pentru noul Ford Puma</h3>
+          <p>Ford Puma EcoBoost Hybrid, un SUV modern cu un design elegant. Disponibil acum la un preț promoțional.</p>
+          <br><br>
+          <a href="#" class="btn">Află mai mult</a>
+      </div>
+      <div class="campaign-card service">
+          <img src="../imagini/imagini-campani/Img3.jpg" alt="3">
+          <h3>Reduceri avantajoase la service Ford</h3>
+          <p>Alege un pachet de revizie completă pentru mașina ta și beneficiază de servicii rapide și de calitate.</p>
+          <br><br>
+          <a href="#" class="btn">Află mai mult</a>
+      </div>
+      <div class="campaign-card service">
+        <img src="../imagini/imagini-campani/Img4.jpg" alt="4">
+        <h3>Servicii rapide și mentenanță premium</h3>
+        <p>Service premium cu revizii rapide și verificări complete. Mentenanță garantată pentru orice model Ford.</p>
+        <br><br>
+        <a href="#" class="btn">Află mai mult</a>
+    </div>
+    <div class="campaign-card piese">
+      <img src="../imagini/imagini-campani/Img5.jpg" alt="5">
+      <h3>Accesorii originale și piese auto Ford</h3>
+      <p>Cumpără piese și accesorii originale Ford la prețuri speciale. Garanție extinsă și livrare rapidă.</p>
+      <br><br>
+      <a href="#" class="btn">Află mai mult</a>
+  </div>
+  </section>
+  
+  <!-- Secțiune interactivă -->
+  <section class="interactive-section">
+      <h2>Ce model ți se potrivește?</h2>
+      <p>Descoperă cel mai potrivit model Ford pentru tine cu ajutorul configuratorului interactiv.</p>
+      <button id="start-configurator" class="btn">Începe Configurarea</button>
+  </section>
+
+    <!--  Corpul  -->
+    <script src="../script/sidebar.js"></script>
+    <!--^ Corpul ^-->
+
+    <footer>
+      <div class="cuprins">
+        <ul class="ul-modele">
+          <li class="titlu-cuprins"><h3>MODELE</h3></li>
+          <li><a href="#">Autoturisme</a></li>
+          <li><a href="#">Vehicule comerciale</a></li>
+          <li><a href="#">Electric & Hybrid</a></li>
+          <li><a href="#">Mașini de familie</a></li>
+          <li><a href="#">Mașini de oraș</a></li>
+          <li><a href="#">Mașini de performanță</a></li>
+          <li><a href="#">SUV-url</a></li>
+          <li><a href="#">ST-Line</a></li>
+          <li><a href="#">Monovolum</a></li>
+        </ul>
+        <ul class="info-ford">
+          <li class="titlu-cuprins"><h3>LUMEA FORD</h3></li>
+          <li><a href="#">Despre Ford</a></li>
+          <li><a href="#">Istoria companiei</a></li>
+          <li><a href="#">Evenimente si saloane auto</a></li>
+          <li><a href="#">Cariere</a></li>
+          <li><a href="#">Mediul înconjurător</a></li>
+        </ul>
+        <ul class="ul-masini">
+          <li class="titlu-cuprins"><h3>MAȘINI</h3></li>
+          <li><a href="#">Noul Explorer</a></li>
+          <li><a href="#">Noul Puma Gen-E</a></li>
+          <li><a href="#">Noul Tourneo Courier</a></li>
+          <li><a href="#">Noul Puma</a></li>
+          <li><a href="#">Noul Focus</a></li>
+          <li><a href="#">Noul Tourneo Connect</a></li>
+          <li><a href="#">Noul Kuga</a></li>
+          <li><a href="#">Mustang Mach-E</a></li>
+          <li><a href="#">Noul Mustang</a></li>
+          <li><a href="#">Explorer</a></li>
+          <li><a href="#">Noul Bronco</a></li>
+          <li><a href="#">Noul Tourneo Custom</a></li>
+        </ul>
+      </div>
+
+      <div class="social-media-tags">
+        <ul>
+          <li>
+            <a target="_blank" href="https://www.facebook.com/FordRomania/"
+              ><img
+                src="imagini/icons/facebook.png.renditions.small.png"
+                alt=""
+            /></a>
+          </li>
+          <li>
+            <a target="_blank" href="https://www.instagram.com/ford_romania/"
+              ><img
+                src="imagini/icons/instagram.png.renditions.small.png"
+                alt=""
+            /></a>
+          </li>
+          <li>
+            <a target="_blank" href="https://www.youtube.com/fordromania"
+              ><img
+                src="imagini/icons/youtube-outlined.png.renditions.small.png"
+                alt=""
+            /></a>
+          </li>
+          <li>
+            <a
+              target="_blank"
+              href="https://www.linkedin.com/showcase/ford-romania/"
+              ><img
+                src="imagini/icons/linkedin.png.renditions.small.png"
+                alt=""
+            /></a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+
+  </body>
+</html>

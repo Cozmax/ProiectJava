@@ -1,0 +1,48 @@
+.main-body{
+    display: flex !important;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    padding: 5px;
+}
+
+.masina {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    width: calc(90%/3);
+    overflow: hidden;
+}
+
+.masina img {
+    width: 100%;
+    height: auto;
+}
+
+.masina-info {
+    padding: 16px;
+}
+
+.masina-info h3 {
+    margin: 0 0 8px;
+    font-size: 1.5rem;
+}
+
+.masina-info p {
+    margin: 0;
+    color: #666;
+}
+
+.masina-info .pret {
+    margin-top: 12px;
+    font-weight: bold;
+    color: #333;
+}
+
+@media(max-width: 1000px){
+    .masina {
+        background-color: #fff;
+        border: 1px solid #ddd;
+        width: calc(90%);
+        overflow: hidden;
+    }
+}

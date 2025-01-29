@@ -1,0 +1,43 @@
+.sidebar{
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.sidebar li{
+  margin-bottom:5vh;
+}
+
+.sidebar a{
+  padding: 0;
+  width: 100%;
+  font-size:5vh;
+}
+
+.sidebar div{
+  justify-content: left;
+  margin-bottom: 5vh;
+}
+
+.sidebar div a{
+  padding: 0;
+}
+
+@media(min-width: 1001px){
+  .menuButton{
+    display:none;
+  }
+}
+@media(max-width: 1000px){
+  .hideOnMobile{
+    display: none;
+  }
+  .menuButton{
+    display: flex;
+  }
+}

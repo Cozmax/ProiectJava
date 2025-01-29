@@ -1,0 +1,219 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", serif;
+  list-style: none;
+}
+
+.coperta-capri,
+.coperta-puma,
+.coperta-explorer,
+.coperta-kuga,
+.coperta-autoutilitara,
+.coperta-tranzit {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  margin: 0;
+  padding: 0; 
+}
+.coperta-capri {
+  background-image: url(../imagini/coperta/1-2024Ford_ElectricCapri_35.jpg);
+}
+.coperta-puma {
+  background-image: url(../imagini/coperta/noul-ford-puma-1200x600.jpg);
+}
+.coperta-explorer {
+  background-image: url(../imagini/coperta/ford-explorer-electric.jpeg);
+}
+.coperta-kuga {
+  background-image: url(../imagini/coperta/2023_FORD_KUGA_ACTIVE_ST-LINE_01-scaled.jpg);
+}
+.coperta-autoutilitara {
+  background-image: url(../imagini/coperta/pilonul-afacerii-tale-vizual-1200x600.jpg);
+}
+.coperta-tranzit {
+  background-image: url(../imagini/coperta/all-electric-e-transit-gal-1.jpg);
+}
+
+.content-coperta {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  padding-left: 3rem;
+  object-fit: contain;
+}
+
+.titlu-coperta {
+  margin-top: 4rem;
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+  padding-left: 1rem;
+}
+
+.pret-coperta {
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  padding-left: 1rem;
+}
+
+form {
+  display: flex;
+  flex-direction: row;
+  gap: 4px;
+  margin-top: 0.5rem;
+}
+
+.btn-conf {
+  height: 3rem;
+  width: 12rem;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 25px;
+  background-color: #0657d9;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.btn-conf:hover {
+  background-color: #043789;
+}
+
+.btn-test {
+  height: 3rem;
+  width: 12rem;
+  padding: 0.5rem;
+  background-color: transparent;
+  border-radius: 25px;
+  border-color: #0657d9;
+  color: #fff;
+  font-weight: bold;
+  transition: background-color 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.btn-test:hover {
+  background-color: #0657d9;
+}
+
+.descriere {
+  text-align: center;
+  font-weight: 450;
+  color: #424285;
+  margin-top: 3.5rem;
+  margin-bottom: 3.5rem;
+}
+
+.subtitlu-1 {
+  text-align: center;
+  font-weight: 600;
+  font-size: 50px;
+  color: #1e1e8b;
+  margin-top: 4rem;
+  margin-bottom: 2.5rem;
+}
+
+.pre-footer {
+  background-color: #13135a;
+  padding: 6rem;
+  margin: 2rem;
+}
+
+.pre-footer ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.pre-footer-content li {
+  display: inline;
+  align-items: center;
+}
+
+.pre-footer-content a {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.pre-footer-content a:hover {
+  text-decoration: underline;
+}
+
+.termeni-conditii {
+  text-decoration: none;
+  color: #1e1e8b;
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
+  padding-bottom: 1.5rem;
+}
+
+.termeni-conditii:hover {
+  text-decoration: underline;
+}
+
+.cuprins {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  margin-top: 1rem;
+  margin-left: 4rem;
+  margin-right: 4rem;
+  padding: 1.5rem 2.5rem 1.5rem 2.5rem;
+  text-decoration: none;
+  background-color: #f3f3f3;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.titlu-cuprins {
+  font-weight: bold;
+  color: #13135a;
+  margin-bottom: 2px;
+}
+
+.cuprins a {
+  color: #606060;
+  margin-bottom: 1rem;
+  font-size: 17px;
+}
+
+.cuprins a:hover {
+  text-decoration: underline;
+  text-decoration-color: #606060;
+}
+
+.social-media-tags ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem;
+  list-style: none;
+  background-color: #13135a;
+  
+}
+
+.social-media-tags li {
+  flex: 1;
+  text-align: center;
+}
+
+.social-media-tags a img {
+  max-width: 40px;
+  height: auto;
+}
+

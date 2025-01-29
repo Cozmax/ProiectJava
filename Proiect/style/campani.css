@@ -1,0 +1,130 @@
+/* Resetare și stiluri de bază */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+h1, h2, h3 {
+    color: #003478;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #003478;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+/* Bara de navigație */
+.campaign-nav {
+    display: flex;
+    justify-content: center;
+    background: #003478;
+    padding: 10px;
+}
+
+.campaign-nav .tab {
+    background: none;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.campaign-nav .tab.active, .campaign-nav .tab:hover {
+    background: #0056b3;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Lista Campaniilor */
+.campaigns-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.campaign-card {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: left;
+}
+
+.campaign-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Secțiune Interactivă */
+.interactive-section {
+    background: #003478;
+    color: white;
+    padding: 40px;
+    margin-top: 20px;
+}
+
+.youtube-banner {
+    position: relative;
+    width: 100%;
+    height: 700px; /* Poți ajusta înălțimea */
+    overflow: hidden;
+}
+
+.youtube-banner iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw; /* Face video-ul să ocupe întreaga lățime a paginii */
+    height: 100vh; /* Se ajustează automat la înălțime */
+    object-fit: cover; /* Elimină marginile negre */
+    pointer-events: none;
+}
+
+.youtube-banner .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Strat semi-transparent peste video */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+
+.youtube-banner h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.youtube-banner .btn {
+    padding: 12px 20px;
+    background-color: #003478;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.youtube-banner .btn:hover {
+    background-color: #0056b3;
+}
