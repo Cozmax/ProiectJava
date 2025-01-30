@@ -2,33 +2,49 @@
 <html>
 
 <head>
-  <link rel="stylesheet" href="../style/model1.css">
-  <link rel="shortcut icon" class="logo" type="image/x-icon" href="../imagini/coperta/51aB7yqrJsL._AC_UF894_1000_QL80_-removebg-preview.png" >
-  <title>Ford Focus</title>
+  <link rel="stylesheet" href="..\style/model1.css">
+  <link rel="shortcut icon" class="logo" type="image/x-icon" href="..\imagini\coperta\51aB7yqrJsL._AC_UF894_1000_QL80_-removebg-preview.png" >
+  <title>Noul ford focus</title>
   <script src="https://kit.fontawesome.com/7003aea01d.js" crossorigin="anonymous"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Vast+Shadow&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Vast+Shadow&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Anton&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Vast+Shadow&display=swap"
+    rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Anton&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Vast+Shadow&display=swap"
+    rel="stylesheet">
+    <link rel="stylesheet" href="../style/style.css" />
 
-  <script>
-    fetch('header1.html')
-        .then(response => response.text())
-        .then(data => {
-            document.getElementById('header').innerHTML = data;
-        });
-  </script>
+
+
+
+
+
 </head>
 
 <body>
-  <div id="header">
+
+  <div class="header">
+    <div class="menuButton">
+      <button onclick="dispare(1)" class="buttonM">
+        <div class="menu"></div>
+        <div class="menu"></div>
+      </button>
+    </div>
+    <div class="photodiv"><img class="photo" src="..\imagini/coperta/ford-go-further.png.renditions.small.png"></div>
+    <div class="profil"><i class="fa-regular fa-user fa-lg"></i></div>
   </div>
 
+
+  <div id="sideb" class="sidebar">
+    <button onclick="dispare(0)" class="xButton"><i class="fa-solid fa-x fa-2xl" style="color: #ffffff;"></i></button>
+  </div>
   <div class="vid">
     <div class="video-container">
       <video autoplay muted loop>
-        <source src="../video/The legend.mp4" type="video/mp4">
-        <source src="../video/The legend.ogg" type="video/ogg">
+        <source src="..\video\The legend.mp4" type="video/mp4">
+        <source src="..\video\The legend.ogg" type="video/ogg">
         Your browser does not support the video tag.
       </video>
     </div>

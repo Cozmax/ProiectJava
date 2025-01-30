@@ -14,7 +14,7 @@
 }
 .main-image {
     width: 80%;
-    height: auto;
+    height: 85vh;
     border-radius: 10px;
     object-fit: cover;
 }
@@ -44,7 +44,7 @@
 }
 
 .info {
-    max-width: 95vw;
+    max-width: 90vw;
     background: white;
     padding: 20px;
     border-radius: 10px;

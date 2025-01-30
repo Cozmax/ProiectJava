@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CAMPANI</title>
+
+    <script>
+      fetch('header1.html')
+          .then(response => response.text())
+          .then(data => {
+              document.getElementById('header').innerHTML = data;
+          });
+
+          document.addEventListener("DOMContentLoaded", function () {
+    const buttons = document.querySelectorAll(".custom-bar-item");
+
+    buttons.forEach(button => {
+        button.addEventListener("click", function () {
+            
+            buttons.forEach(btn => btn.classList.remove("active"));
+
+           
+            this.classList.add("active");
+        });
+    });
+});
+    </script>
+
+  <link rel="stylesheet" href="../style/noulFordPuma.css">
+  <link rel="stylesheet" href="../style/style.css">
+
+  </head>
+
+<body>
+
+    <div id="header">
+    </div>
+
+    <section class="video-section">
+      <div class="video-container">
+        <iframe 
+          src="https://www.youtube.com/embed/KGUsbp4d3V0?autoplay=1&mute=1&loop=1&playlist=KGUsbp4d3V0&cc_load_policy=0&modestbranding=1&controls=0&showinfo=0
+
+          " 
+          frameborder="0"
+          allow="autoplay; fullscreen"
+          allowfullscreen
+        >
+        </iframe>
+      </div>
+      <div class="video-overlay">
+        <h1 class="video-title hidden-on-load">Noul Ford Puma</h1>
+        <button class="cta-button hidden-on-load"><a href="#sectiune-test-drive-si-brosura" class="cta-button hidden-on-load">Află mai multe</a></button>
+      </div>
+    </section>
+  
+    <section class="info-section hidden-on-load">
+      <h2>Descoperă noul Ford Puma</h2>
+      <p>
+        Ford Puma reprezintă combinația perfectă între design modern, tehnologie 
+        avansată și performanță de excepție. Interiorul spațios și confortabil te 
+        va surprinde, iar tehnologiile inovatoare te vor ajuta să te bucuri 
+        de fiecare călătorie.
+      </p>
+    </section>
+  
+    <section class="gallery-section">
+      <div class="gallery-item hidden-on-load">
+        <img src="../imagini/imagini-ford-puma/1 Ford Puma Gen-E.jpg" alt="Ford Puma" />
+        <div class="gallery-text">
+          <h3>Design Modern</h3>
+          <p>
+            Liniile îndrăznețe și profilul fluid scot în evidență personalitatea unică a noului Ford Puma, făcându-l inconfundabil.
+          </p>
+        </div>
+      </div>
+  
+      <div class="gallery-item hidden-on-load">
+        <img src="../imagini/imagini-ford-puma/ford-e_puma-eu-Large_Card_17_PUMA_AMBIENT-16x9-1440x810-interior-ambient-lighting.jpg" alt="Ford Puma Interior" />
+        <div class="gallery-text">
+          <h3>Tehnologie Avansată</h3>
+          <p>
+            Ecranul tactil și sistemul Ford SYNC 3 oferă acces rapid la informații, muzică și navigație, pentru o experiență interactivă.
+          </p>
+        </div>
+      </div>
+  
+      <div class="gallery-item hidden-on-load">
+        <img src="../imagini/imagini-ford-puma/Ford-Puma-Gen-E_12.jpg" alt="Ford Puma Detalii" />
+        <div class="gallery-text">
+          <h3>Siguranță Inteligentă</h3>
+          <p>
+            Funcțiile de asistență la condus și senzorii avansați mențin stabilitatea, sporind protecția și încrederea în orice condiții.
+          </p>
+        </div>
+      </div>
+    </section>
+
+  
+    <section class="simple-gallery1">
+      <h2>Galerie Ford Puma Electric</h2>
+      <div class="gallery-grid1">
+        <div class="gallery-item1">
+          <img src="../imagini/imagini-ford-puma/ford-puma-suv-petrol-75e2853a7425.jpg" alt="Puma 1" />
+        </div>
+        <div class="gallery-item1">
+          <img src="../imagini/imagini-ford-puma/Screenshot 2025-01-29 173345.png" alt="Puma 2" />
+        </div>
+        <div class="gallery-item1">
+          <img src="../imagini/imagini-ford-puma/Ford-Puma-Gen-E_5.jpg" alt="Puma 3" />
+        </div>
+        <div class="gallery-item1">
+          <img src="../imagini/imagini-ford-puma/https___www.promotor.ro_wp-content_uploads_2024_12_ford-a-lansat-oficial-puma-gen-e-primul-suv-electric-produs-in-romania-galerie-foto-5-scaled.webp" alt="Puma 4" />
+        </div>
+        <div class="gallery-item1">
+          <img src="../imagini/imagini-ford-puma/ford-puma-2024-interni.jpg" alt="Puma 5" />
+        </div>
+        <div class="gallery-item1">
+          <img src="../imagini/imagini-ford-puma/670fa103b94d91729077507.jpeg" alt="Puma 6" />
+        </div>
+      </div>
+    </section>
+    
+    <section class="puma-colors-section">
+        <h2>Ford Puma în mai multe culori</h2>
+        <p class="description">Mașina vine în mai multe culori. Apasă pe butoanele de mai jos pentru a vedea Ford Puma în culoarea dorită:</p>
+      
+        <div class="puma-image-container">
+          <img id="pumaMainImage" src="../imagini/imagini-ford-puma/ford-puma-alb-e1684502065183.jpg" alt="Ford Puma" />
+        </div>
+      
+        <div class="color-switcher">
+          <button class="color-btn" data-img="../imagini/imagini-ford-puma/ford-puma-alb-e1684502065183.jpg" style="background-color: #fff;">Alb</button>
+          <button class="color-btn" data-img="../imagini/imagini-ford-puma/ford-puma-negru2-e1684502079113.jpg" style="background-color: #000; color: #fff;">Negru</button>
+          <button class="color-btn" data-img="../imagini/imagini-ford-puma/FEATURE-FORD_2024_PUMA_GEN-E_22-960x640.jpg" style="background-color: #fecd0a;">Galben</button>
+        </div>
+      </section>
+
+    <section class="contact-section hidden-on-load" id="sectiune-test-drive-si-brosura">
+      <h2>Vrei să afli mai multe?</h2>
+      <p>
+        Programează un test drive sau descoperă ofertele speciale pentru noul 
+        Ford Puma. Experimentează plăcerea de a conduce!
+      </p>
+      <button class="main-button" id="test-drive">Test Drive</button>
+      <button class="main-button" id="brosura">Broșură</button>
+    </section>
+  
+    <div class="configurator-container">
+        <h1>Configurează-ți Ford Puma</h1>
+    
+        <div class="models-list">
+    
+          <div class="model-card">
+            <h3>Ford Puma - Select</h3>
+            <p>Preț de la: <strong>36.300€</strong></p>
+            <p>Autonomie standard, baterie 52 kWh, 125 kW / 170 CP</p>
+            <p>Timp de încărcare: 25 min</p>
+    
+            <div class="color-options">
+              <input type="radio" id="puma1-alb"   name="puma1color" value="Alb">
+              <label for="puma1-alb"   data-color="alb"></label>
+    
+              <input type="radio" id="puma1-negru" name="puma1color" value="Negru">
+              <label for="puma1-negru" data-color="negru"></label>
+    
+              <input type="radio" id="puma1-galben"name="puma1color" value="Galben">
+              <label for="puma1-galben"data-color="galben"></label>
+            </div>
+    
+            <button class="btn-select" 
+                    data-model="Ford Puma - Select" 
+                    data-price="36300" 
+                    data-power="170 CP">
+              Selectează
+            </button>
+          </div>
+    
+          <div class="model-card">
+            <h3>Ford Puma - Titanium</h3>
+            <p>Preț de la: <strong>41.900€</strong></p>
+            <p>Autonomie extinsă, baterie 72 kWh, 210 kW / 286 CP</p>
+            <p>Timp de încărcare: 28 min</p>
+    
+            <div class="color-options">
+              <input type="radio" id="puma2-alb"   name="puma2color" value="Alb">
+              <label for="puma2-alb"   data-color="alb"></label>
+    
+              <input type="radio" id="puma2-negru" name="puma2color" value="Negru">
+              <label for="puma2-negru" data-color="negru"></label>
+    
+              <input type="radio" id="puma2-galben"name="puma2color" value="Galben">
+              <label for="puma2-galben"data-color="galben"></label>
+            </div>
+    
+            <button class="btn-select" 
+                    data-model="Ford Puma - Titanium" 
+                    data-price="41900" 
+                    data-power="286 CP">
+              Selectează
+            </button>
+          </div>
+    
+          <div class="model-card">
+            <h3>Ford Puma - Premium</h3>
+            <p>Preț de la: <strong>46.250€</strong></p>
+            <p>AWD,autonomie extinsă,baterie 79 kWh,250 kW/340</p>
+            <p>Timp de încărcare: 26 min</p>
+    
+            <div class="color-options">
+              <input type="radio" id="puma3-alb"   name="puma3color" value="Alb">
+              <label for="puma3-alb"   data-color="alb"></label>
+    
+              <input type="radio" id="puma3-negru" name="puma3color" value="Negru">
+              <label for="puma3-negru" data-color="negru"></label>
+    
+              <input type="radio" id="puma3-galben"name="puma3color" value="Galben">
+              <label for="puma3-galben"data-color="galben"></label>
+            </div>
+    
+            <button class="btn-select" 
+                    data-model="Ford Puma - Premium" 
+                    data-price="46250" 
+                    data-power="340 CP">
+              Selectează
+            </button>
+          </div>
+    
+        </div>
+    
+        <div id="configSummary">
+          <h2>Configurația ta</h2>
+          <p><strong>Model:</strong> <span id="summaryModel"></span></p>
+          <p><strong>Culoare:</strong> <span id="summaryColor"></span></p>
+          <p><strong>Putere:</strong> <span id="summaryPower"></span></p>
+          <p><strong>Preț estimativ:</strong> <span id="summaryPrice"></span> €</p>
+        </div>
+    
+      </div>
+
+    <footer>
+        <div class="cuprins">
+          <ul class="ul-modele">
+            <li class="titlu-cuprins"><h3>MODELE</h3></li>
+            <li><a href="#">Autoturisme</a></li>
+            <li><a href="#">Vehicule comerciale</a></li>
+            <li><a href="#">Electric & Hybrid</a></li>
+            <li><a href="#">Mașini de familie</a></li>
+            <li><a href="#">Mașini de oraș</a></li>
+            <li><a href="#">Mașini de performanță</a></li>
+            <li><a href="#">SUV-url</a></li>
+            <li><a href="#">ST-Line</a></li>
+            <li><a href="#">Monovolum</a></li>
+          </ul>
+          <ul class="info-ford">
+            <li class="titlu-cuprins"><h3>LUMEA FORD</h3></li>
+            <li><a href="#">Despre Ford</a></li>
+            <li><a href="#">Istoria companiei</a></li>
+            <li><a href="#">Evenimente si saloane auto</a></li>
+            <li><a href="#">Cariere</a></li>
+            <li><a href="#">Mediul înconjurător</a></li>
+          </ul>
+          <ul class="ul-masini">
+            <li class="titlu-cuprins"><h3>MAȘINI</h3></li>
+            <li><a href="#">Noul Explorer</a></li>
+            <li><a href="#">Noul Puma Gen-E</a></li>
+            <li><a href="#">Noul Tourneo Courier</a></li>
+            <li><a href="#">Noul Puma</a></li>
+            <li><a href="#">Noul Focus</a></li>
+            <li><a href="#">Noul Tourneo Connect</a></li>
+            <li><a href="#">Noul Kuga</a></li>
+            <li><a href="#">Mustang Mach-E</a></li>
+            <li><a href="#">Noul Mustang</a></li>
+            <li><a href="#">Explorer</a></li>
+            <li><a href="#">Noul Bronco</a></li>
+            <li><a href="#">Noul Tourneo Custom</a></li>
+          </ul>
+        </div>
+  
+        <div class="social-media-tags">
+          <ul>
+            <li>
+              <a target="_blank" href="https://www.facebook.com/FordRomania/"
+                ><img
+                  src="imagini/icons/facebook.png.renditions.small.png"
+                  alt=""
+              /></a>
+            </li>
+            <li>
+              <a target="_blank" href="https://www.instagram.com/ford_romania/"
+                ><img
+                  src="imagini/icons/instagram.png.renditions.small.png"
+                  alt=""
+              /></a>
+            </li>
+            <li>
+              <a target="_blank" href="https://www.youtube.com/fordromania"
+                ><img
+                  src="imagini/icons/youtube-outlined.png.renditions.small.png"
+                  alt=""
+              /></a>
+            </li>
+            <li>
+              <a
+                target="_blank"
+                href="https://www.linkedin.com/showcase/ford-romania/"
+                ><img
+                  src="imagini/icons/linkedin.png.renditions.small.png"
+                  alt=""
+              /></a>
+            </li>
+          </ul>
+        </div>
+      </footer>
+
+    <script src="../script/noulFordPuma.js"></script>
+  </body>
